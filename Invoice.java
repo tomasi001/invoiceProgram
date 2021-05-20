@@ -28,7 +28,6 @@ public class Invoice {
     // declare constructor
     public Invoice() {
         // set attributes to inputted information
-        // cusOrder = "";
         orderList = "";
         orderNumber = JOptionPane.showInputDialog("Please Enter Customer's Order Number");
         cusName = JOptionPane.showInputDialog("Please Enter Customer's Name");
@@ -36,7 +35,6 @@ public class Invoice {
         cusPhnNum = JOptionPane.showInputDialog("Please Enter Customer's Phone Number");
         cusCity = JOptionPane.showInputDialog("Please Enter Customer's City");
         resName = JOptionPane.showInputDialog("Please Enter Restaurant's Name");
-        // System.out.println(cusOrder);
         cusOrder = JOptionPane.showInputDialog(
                 "Please Enter Customer's Order, Quantity and the Price of each item\nEnter \"0\" when you are finished entering items\neg) 1x Pepperoni Pizza (R100)");
         while (nullCheck(cusOrder)) {
@@ -88,6 +86,7 @@ public class Invoice {
         return output;
     }
 
+    // method to check if a string is null
     private boolean nullCheck(String stringToCheck){
         if(stringToCheck != null){
             return true;
