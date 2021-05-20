@@ -1,4 +1,3 @@
-
 // import java swing library of functions.
 import javax.swing.*;
 

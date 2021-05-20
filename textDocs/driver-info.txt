@@ -15,7 +15,6 @@ Blaine Merritt, Springbok, 11
 Clement Bond, Port Elizabeth, 9
 Lily Drew, Port Elizabeth, 4
 Cayson Warner, Cape Town, 5
-Miranda Metcalfe, Cape Town, 5
 Eisa Wilson, Johannesburg, 11
 Kealan Chester, Port Elizabeth, 4
 Ana Ortega, Port Elizabeth, 4
@@ -28,3 +27,4 @@ Kailan Snow, Bloemfontein, 8
 Aaron Neville, Cape Town, 7
 Eshan Gibson, Witbank, 8
 Adelina Markham, Witbank, 8
+Miranda Metcalfe, Cape Town, 6

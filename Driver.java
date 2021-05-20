@@ -31,7 +31,7 @@ public class Driver {
         // while file has a next line
         // add each line to driverArray
         try {
-            File x = new File("textDocs/drivers.txt");
+            File x = new File("textDocs/driver-info.txt");
             Scanner sc = new Scanner(x);
 
             while (sc.hasNextLine()) {
@@ -39,7 +39,7 @@ public class Driver {
                 driverArray.add(line);
             }
 
-            // close the scan of drivers.txt
+            // close the scan of driver-info.txt
             sc.close();
 
             // output an error if file is not found
@@ -150,7 +150,7 @@ public class Driver {
 
     private void writeToDriverFile(String output) {
         try {
-            Formatter f = new Formatter("textDocs/drivers.txt");
+            Formatter f = new Formatter("textDocs/driver-info.txt");
             f.format("%s", output);
             f.close();
 
