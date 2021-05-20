@@ -6,7 +6,7 @@ import java.util.Formatter;
 import java.util.Scanner;
 
 public class Driver {
-    // declare attribute
+    // declare attributes
     String name;
     String driverOutput;
 
@@ -22,6 +22,7 @@ public class Driver {
         return driverOutput;
     }
 
+    // method to fetch drivers information
     private ArrayList<String> fetchDrivers() {
         // declare array list to store list of drivers
         ArrayList<String> driverArray = new ArrayList<>();
@@ -49,6 +50,7 @@ public class Driver {
         return driverArray;
     }
 
+    // method to select the relevant driver for each order
     private String selectDriver(ArrayList<String> drivers, String resArea) {
         // declare temp array list to store list of drivers
         ArrayList<String> tempList = drivers;
@@ -101,6 +103,7 @@ public class Driver {
         return name;
     }
 
+    // method to add to a drivers load and call the function to update the drivers file
     private void addToLoad(ArrayList<String> drivers, String name, String resArea) {
         while (nullCheck(name)) {
             // declare temp array list to store list of drivers
@@ -137,6 +140,7 @@ public class Driver {
         }
     }
 
+    // method to output the array of drivers as an easy to read list
     private String toOutput(ArrayList<String> arrayList) {
 
         String output = "";
@@ -148,6 +152,8 @@ public class Driver {
         return output;
     }
 
+    // method to write the easy to read list of drivers information 
+    // to its respective file
     private void writeToDriverFile(String output) {
         try {
             Formatter f = new Formatter("textDocs/driver-info.txt");
@@ -158,6 +164,7 @@ public class Driver {
         }
     }
 
+    // method to check if a string is null
     private boolean nullCheck(String stringToCheck) {
         if (stringToCheck != null) {
             return true;

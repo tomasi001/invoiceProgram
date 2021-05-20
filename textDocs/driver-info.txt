@@ -20,7 +20,6 @@ Kealan Chester, Port Elizabeth, 4
 Ana Ortega, Port Elizabeth, 4
 Johan Hoffman, Springbok, 3
 Jaidan Spencer, Potchefstroom, 5
-Spike Fenton, Johannesburg, 2
 Eugene Santana, Durban, 5
 Karol Dunn, Durban, 5
 Kailan Snow, Bloemfontein, 8
@@ -28,3 +27,4 @@ Aaron Neville, Cape Town, 7
 Eshan Gibson, Witbank, 8
 Adelina Markham, Witbank, 8
 Miranda Metcalfe, Cape Town, 6
+Spike Fenton, Johannesburg, 3

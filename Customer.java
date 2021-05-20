@@ -4,11 +4,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-// import java.util.Collections;
-// import java.util.Collections;
-// import java.util.Arrays;
 import java.util.Formatter;
-// import java.util.List;
 import java.util.Scanner;
 
 public class Customer {
@@ -41,7 +37,6 @@ public class Customer {
         this.phnNum = phnNum;
         this.address = address;
         this.city = city;
-        // saveNameAndOrderNum(name, orderNumber);
         addNameAndLocation(name, city, orderNumber);
     }
 
@@ -89,6 +84,7 @@ public class Customer {
         }
     }
 
+    // method to output the list of names to a string
     private String listToOutput(ArrayList<String> arrayList){
         String listOutput = "";
         if(arrayList.size() > 0){
@@ -104,6 +100,8 @@ public class Customer {
         return listOutput;
     }
 
+    // method to out put the lists of names in an easy to read format
+    // under their respective area headings
     public String toString(){
 
         String output = "CAPE TOWN\n\n";
@@ -126,6 +124,7 @@ public class Customer {
         return output;
     }
 
+    // method to write customer names to their respective area files
     private void writeToAreaFile(String fileName, String name, String orderNumber){
         PrintWriter printWriter = null;
 
@@ -150,8 +149,8 @@ public class Customer {
             }
     }
 
+    // method to fetch customers names and sort them according to their natural ordering
     private ArrayList<String> fetchAndSort(String fileName, ArrayList<String> arrayList){
-
         // fetch the file information
         // scan the file information
         // while file has a next line 
@@ -184,9 +183,9 @@ public class Customer {
         return sortedArrayListAscending;
     }
 
+    // method to write the Organised and structured Output of customer names
+    // to its respective File
     private void writeListToFile(){
-
-        // write back to File
         try {
             Formatter f = new Formatter("textDocs/nameAndLocation.txt");
             f.format("%s", "");
@@ -197,6 +196,7 @@ public class Customer {
         }
     }
 
+    // method to check if a string is null
     private boolean nullCheck(String stringToCheck){
         if(stringToCheck != null){
             return true;
