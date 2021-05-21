@@ -36,18 +36,21 @@ public class Invoice {
         cusCity = JOptionPane.showInputDialog("Please Enter Customer's City");
         resName = JOptionPane.showInputDialog("Please Enter Restaurant's Name");
         cusOrder = JOptionPane.showInputDialog(
-                "Please Enter Customer's Order, Quantity and the Price of each item\nEnter \"0\" when you are finished entering items\neg) 1x Pepperoni Pizza (R100)");
+                "Please Enter Customer's Order, Quantity and the Price of each item\nEnter \"%\" when you are finished entering items\neg) 1x Pepperoni Pizza (R100)");
         while (nullCheck(cusOrder)) {
-            while (!cusOrder.equalsIgnoreCase("0")) {
-                cusOrder = JOptionPane.showInputDialog(
+            Character conditionCheck = new Character('%');
+            Character lastCharacter = new Character(cusOrder.charAt(cusOrder.length()-1));
+            while (!lastCharacter.equals(conditionCheck)) {
+                cusOrder += "\n" + JOptionPane.showInputDialog(
                         "Please Enter Customer's Order, Quantity and the Price of each item\nEnter \"0\" when you are finished entering items\neg) 1x Pepperoni Pizza (R100)");
-                orderList += cusOrder + "\n";
+                lastCharacter = new Character(cusOrder.charAt(cusOrder.length()-1));
             }
-            if(cusOrder.equalsIgnoreCase("0")){
+            if(lastCharacter.equals(conditionCheck)){
+                orderList = cusOrder;
                 break;
             }
         }
-        orderList = orderList.replace("0\n", "");
+        orderList = orderList.replace("%", "");
 
         specialPrep = JOptionPane.showInputDialog("Please Enter Any Special preparation Instructions");
         total = JOptionPane.showInputDialog("Please Enter Total Price");

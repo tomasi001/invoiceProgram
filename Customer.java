@@ -68,14 +68,14 @@ public class Customer {
                 writeToAreaFile("potchefstroom.txt", name, orderNumber);
             }
 
-            capeList = fetchAndSort("capeTown.txt", capeList);
-            durbanList = fetchAndSort("durban.txt", durbanList);
-            johannesList = fetchAndSort("johannesburg.txt", johannesList);
-            bloemList = fetchAndSort("bloemfontein.txt", bloemList);
-            witList = fetchAndSort("witbank.txt", witList);
-            portList = fetchAndSort("portElizabeth.txt", portList);
-            springList = fetchAndSort("springbok.txt", springList);
-            potchList = fetchAndSort("potchefstroom.txt", potchList);
+            capeList = fetchList("capeTown.txt", capeList);
+            durbanList = fetchList("durban.txt", durbanList);
+            johannesList = fetchList("johannesburg.txt", johannesList);
+            bloemList = fetchList("bloemfontein.txt", bloemList);
+            witList = fetchList("witbank.txt", witList);
+            portList = fetchList("portElizabeth.txt", portList);
+            springList = fetchList("springbok.txt", springList);
+            potchList = fetchList("potchefstroom.txt", potchList);
 
 
 
@@ -150,7 +150,7 @@ public class Customer {
     }
 
     // method to fetch customers names and sort them according to their natural ordering
-    private ArrayList<String> fetchAndSort(String fileName, ArrayList<String> arrayList){
+    private ArrayList<String> fetchList(String fileName, ArrayList<String> arrayList){
         // fetch the file information
         // scan the file information
         // while file has a next line 
@@ -176,7 +176,12 @@ public class Customer {
         } catch (FileNotFoundException e) {
             System.out.println("FetchError");
         }
-       
+
+        return arrayList = sortList(arrayList);
+    }
+
+    // method to sort array list in natural order of elements
+    private ArrayList<String> sortList(ArrayList<String> arrayList){
         SortArrayListAscending sortArrayList = new SortArrayListAscending(arrayList);
         ArrayList<String> sortedArrayListAscending = sortArrayList.sortAscending(); 
 
