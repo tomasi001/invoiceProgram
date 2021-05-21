@@ -1,20 +1,21 @@
-Order Number: 101
-Customer: Shelley
-Email: shelley@gmail.com
-Phone Number: 021
-Location: Johannesburg
+Order Number: 10
+Customer: Jermaine
+Email: Jermaine@gmail.com
+Phone Number: 021 794 82 42
+Location: Cape Town
 
-You have ordered the following from: Joburger in Johannesburg
+You have ordered the following from: Cape TEOWN in Cape Town
 
-1x Large Fries (R40)
+1x Chips (R30)
+1x Drink (R40)
 
 
-Special Preparation Instructions: extra chilli
+Special Preparation Instructions: none
 
-Total: R120
+Total: R70
 
-Spike Fenton is nearest to the restaurant and so they will be delivering your order to you at: 
+Miranda Metcalfe is nearest to the restaurant and so they will be delivering your order to you at: 
 
-37 Daisy Lane, hillbrow
+37 Nice Road, Nicevilee
 
-If you need to contact the restaurant: 011
+If you need to contact the restaurant: 021 367 7456

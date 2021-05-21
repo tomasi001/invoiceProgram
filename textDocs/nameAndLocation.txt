@@ -1,14 +1,17 @@
 CAPE TOWN
 
 Anna
+Delucia, 114
+Jackson, 114
+Jermaine, 10
 Tom
 Zach
-shay, 100
 
 
 DURBAN
 
 Anna
+Johnash, 111
 Tom
 Zach
 
@@ -25,12 +28,14 @@ BLOEMFONTEIN
 
 Anna
 Anne
+Fred, 112
 Geoffry
 
 
 WITBANK
 
 Anna
+Billlay, 1000
 Tom
 Zach
 
@@ -38,12 +43,14 @@ Zach
 PORT ELIZABETH
 
 Anna
+Pillay, 109
 Tom
 Zach
 
 
 SPRINGBOK
 
+Joy, 113
 Stan
 Tom
 Uncle
@@ -54,4 +61,5 @@ POTCHEFSTROOM
 
 Anna
 Barley
+Shanay, 110
 Zach
